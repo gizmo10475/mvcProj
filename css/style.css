@@ -1,0 +1,150 @@
+body {
+    overflow-y: scroll;
+    display: block;
+    /* width: 1000px; */
+    width: 60%;
+    margin: auto;
+    /* padding-left: 1em; */
+    /* border-left: 1px solid #ccc; */
+    background-color: #FCE9F3;
+}
+
+main {
+    min-height: 40em;
+    /* padding-top: 2em; */
+    /* padding-left: 2em; */
+    background-color: #FCE9F3;
+}
+
+.welcome {
+    /* text-align: center; */
+    /* margin-left: 5em; */
+    margin-top: 1em;
+}
+
+nav {
+    /* background-color: green; */
+    font-size: 2em;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #000;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #7a7a7a;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    /* background-color: black; */
+    width: 50%;
+    /* margin-left: -30em; */
+    height: 5em;
+}
+
+.center {
+    text-align: center;
+}
+
+.centerimg {
+    display: block;
+    margin: auto;
+}
+
+.link {
+    background-color: #ff6ab9;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    margin: auto;
+    width: 20%;
+}
+
+.yatzydiv {
+    display: block;
+    margin: auto;
+    width: 100%;
+}
+
+input {
+    font-size: larger;
+}
+
+input[type=checkbox] {
+    -ms-transform: scale(2);
+    -moz-transform: scale(2);
+    -webkit-transform: scale(2);
+    -o-transform: scale(2);
+    transform: scale(2);
+    padding: 10px;
+    margin: 0.5em;
+}
+
+.link:hover {
+    background-color: #ff3ca4;
+}
+
+.dice-utf8 .dice-1::after {
+    content: "\2680";
+}
+
+.dice-utf8 .dice-2::after {
+    content: "\2681";
+}
+
+.dice-utf8 .dice-3::after {
+    content: "\2682";
+}
+
+.dice-utf8 .dice-4::after {
+    content: "\2683";
+}
+
+.dice-utf8 .dice-5::after {
+    content: "\2684";
+}
+
+.dice-utf8 .dice-6::after {
+    content: "\2685";
+}
+
+.dice-utf8 {
+    font-size: 32px;
+}
+
+button {
+    font-size: 2em;
+}
+
+table, th, td {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}

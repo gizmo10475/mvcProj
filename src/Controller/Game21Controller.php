@@ -38,9 +38,13 @@ class Game21Controller extends AbstractController
     public function startgame(SessionInterface $session, Request $request): Response
     {
         $dice = new \App\Dice\DiceGraphic();
-        $rolls = 1;
+        // $rolls = 1;
         $res = [];
-        $class = [];
+        // $class = [];
+
+        if ($request->get('btn') == 'stop') {
+            $session->set('stopgame', 1);
+        }
 
         if ($session->get('stopgame') == 0) {
             $die = $dice->roll();
@@ -54,10 +58,30 @@ class Game21Controller extends AbstractController
         $session->set('dice1status', false);
 
 
+        // if ($request = $this->get('request')) {
+        //     var_dump("hejkasdiajsdioujahsdkjashdkajhsbnd");
+        // }
+        if ($session->get('stopgame') == 1) {
+            $session->set('stopgame', 1);
+            while ($session->get('scoreBot') < 21) {
+                $bot = $dice->roll();
+                $session->set('scoreBot', ($session->get('scoreBot') + $bot));
+            }
+        }
+
+        var_dump($session->get('scoreBot'));
+
+        // if ($request->get('stop')) {
+        //     while ($session->get('scoreBot') < 21) {
+        //         $bot = $dice->roll();
+        //         $session->set('scoreBot', ($session->get('scoreBot') + $die));
+        //     }
+        // }
 
 
         return $this->render('dice1.html.twig', []);
     }
+
 
 
 }

@@ -1,0 +1,67 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} Dice {% endblock %}
+
+{% block body %}
+
+
+
+{# {{_SESSION["scoreUsr"] = 0;}}
+{{_SESSION["scoreBot"] = 0;}}
+{{_SESSION["stopgame"] = 0;}}
+
+{{settype(_SESSION["pointsUsr"], "integer");}}
+{{settype(_SESSION["pointsBot"], "integer");}} #}
+
+
+{# {{die = new \Edvin\Dice\Dice();}} #}
+
+
+
+<h1><?= $header ?></h1>
+
+<p><?= $message ?></p>
+
+
+<h2 class="center">1 tärning</h2>
+<div class="center">
+    <p class="dice-utf8">
+        {% for value in app.session.get('listan') %}
+            <button class=" {{ value }}"> </button>
+        {% endfor %}
+    </p>
+
+    <h1> {{app.session.get('scoreUsr')}} </h1>
+
+    {% if app.session.get('scoreUsr') < 21 and app.session.get('stopgame') == 0 %}
+        <h2>
+            <form method="POST">
+                <input type="submit" name="btn" value="slå tärning">
+                <input type="submit" name="btn" value="stop">
+            </form>
+        </h2>
+    {% elseif app.session.get('scoreUsr') == 21 %}
+        <h2>
+            DU VINNER! DU FICK 21!
+        </h2>
+    {% elseif app.session.get('scoreUsr') > 21 %}
+        <h2>
+            ÖVER 21, DU FÖRLORAR
+            <h2><?= $_SESSION["scoreUsr"] ?></h2>
+            <?= $_SESSION["stopgame"] = 1?>
+        </h2>
+        <a href="game21">Spela igen</a>
+    {% endif %}
+
+
+    {% if app.session.get('stopgame') == 1 %}
+        <h2>Dina poäng: {{app.session.get('scoreUsr') }}</h2>
+    {% endif %}
+
+    {# while ($_SESSION["scoreBot"] < 21) {
+            $bot = $dice->roll();
+            $_SESSION["scoreBot"] += $bot;
+    } #}
+</div>
+
+{% endblock %}

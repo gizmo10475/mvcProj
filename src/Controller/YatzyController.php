@@ -10,7 +10,6 @@ use Symfony\Component\HttpFoundation\Request;
 use App\Dice\DiceGraphic;
 use App\Entity\Highscore;
 
-
 class YatzyController extends AbstractController
 {
 
@@ -175,11 +174,8 @@ class YatzyController extends AbstractController
 
                 $entityManager->persist($highscore);
                 $entityManager->flush();
-
             }
-
         }
-
         $session->set('dice1status', true);
         $session->set('dice2status', true);
         $session->set('dice3status', true);
@@ -187,8 +183,6 @@ class YatzyController extends AbstractController
         $session->set('dice5status', true);
         $throws = $session->get('yatzythrows');
         $session->set('yatzythrows', $throws += 1);
-
-
 
         return $this->render('yatzygame.html.twig');
     }

@@ -1,8 +1,8 @@
 <?php
 
 namespace App\Books;
-use Doctrine\ORM\Mapping as ORM;
 
+use Doctrine\ORM\Mapping as ORM;
 
 class Books
 {
@@ -75,5 +75,4 @@ class Books
     {
         $this->img = $img;
     }
-
 }

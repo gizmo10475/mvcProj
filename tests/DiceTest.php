@@ -24,4 +24,17 @@ class DiceTest extends TestCase
         $exp = $dice->getLastRoll();
         $this->assertSame($exp, $res);
     }
+
+    /**
+     * Checking rollTwo and getLastRoll.
+     */
+    public function testRollTwo()
+    {
+        $dice = new Dice();
+
+        $res = $dice->rollTwo();
+        $exp = $dice->getLastRoll();
+        $this->assertSame($exp, $res);
+    }
+
 }

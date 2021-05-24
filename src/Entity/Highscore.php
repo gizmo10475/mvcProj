@@ -36,5 +36,4 @@ class Highscore
     {
         $this->score = $score;
     }
-
 }

@@ -56,7 +56,19 @@
 
     {% if app.session.get('stopgame') == 1 %}
         <h2>Dina poäng: {{app.session.get('scoreUsr') }}</h2>
+        <h2>Datorns poäng: {{ app.session.get('scoreBot')}}</h2>
+
+        {% if app.session.get('scoreBot') == 21 %}
+            <h2>Datorn vann!</h2>
+        {% elseif app.session.get('scoreBot') > 21 and  app.session.get('scoreUsr') > 21 %}
+            <h2>Ingen vann.</h2>
+        {% else %}
+            <h2>Du vann!</h2>
+        {% endif %}
     {% endif %}
+
+
+
 
     {# while ($_SESSION["scoreBot"] < 21) {
             $bot = $dice->roll();

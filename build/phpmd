@@ -12,10 +12,7 @@ C:\cygwin64\home\Edvin\dbwebb-kurser\mvc\me\proj\migrations\Version2021051400423
 C:\cygwin64\home\Edvin\dbwebb-kurser\mvc\me\proj\migrations\Version20210514004238.php:26	Avoid unused parameters such as '$schema'.
 C:\cygwin64\home\Edvin\dbwebb-kurser\mvc\me\proj\src\Books\Books.php:12	Avoid variables with short names like $id. Configured minimum length is 3.
 C:\cygwin64\home\Edvin\dbwebb-kurser\mvc\me\proj\src\Controller\Game21Controller.php:19	Avoid unused parameters such as '$request'.
-C:\cygwin64\home\Edvin\dbwebb-kurser\mvc\me\proj\src\Controller\Game21Controller.php:38	Avoid unused parameters such as '$request'.
 C:\cygwin64\home\Edvin\dbwebb-kurser\mvc\me\proj\src\Controller\Game21Controller.php:40	Missing class import via use statement (line '40', column '21').
-C:\cygwin64\home\Edvin\dbwebb-kurser\mvc\me\proj\src\Controller\Game21Controller.php:41	Avoid unused local variables such as '$rolls'.
-C:\cygwin64\home\Edvin\dbwebb-kurser\mvc\me\proj\src\Controller\Game21Controller.php:43	Avoid unused local variables such as '$class'.
 C:\cygwin64\home\Edvin\dbwebb-kurser\mvc\me\proj\src\Controller\YatzyController.php:46	The method startgame() has a Cyclomatic Complexity of 42. The configured cyclomatic complexity threshold is 10.
 C:\cygwin64\home\Edvin\dbwebb-kurser\mvc\me\proj\src\Controller\YatzyController.php:46	The method startgame() has an NPath complexity of 77824. The configured NPath complexity threshold is 200.
 C:\cygwin64\home\Edvin\dbwebb-kurser\mvc\me\proj\src\Controller\YatzyController.php:46	The method startgame() has 143 lines of code. Current threshold is set to 100. Avoid really long methods.

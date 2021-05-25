@@ -5,3 +5,8 @@
 [![Code Coverage](https://scrutinizer-ci.com/g/gizmo10475/mvcProj/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/gizmo10475/mvcProj/?branch=master)
 
 [![Build Status](https://scrutinizer-ci.com/g/gizmo10475/mvcProj/badges/build.png?b=master)](https://scrutinizer-ci.com/g/gizmo10475/mvcProj/build-status/master)
+
+
+A project for the course MVC using Symfony and Doctrine.  
+Made by Eddie.  
+github.com/gizmo10475

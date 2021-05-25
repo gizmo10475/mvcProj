@@ -5,19 +5,6 @@
 {% block body %}
 
 
-
-{# {{_SESSION["scoreUsr"] = 0;}}
-{{_SESSION["scoreBot"] = 0;}}
-{{_SESSION["stopgame"] = 0;}}
-
-{{settype(_SESSION["pointsUsr"], "integer");}}
-{{settype(_SESSION["pointsBot"], "integer");}} #}
-
-
-{# {{die = new \Edvin\Dice\Dice();}} #}
-
-
-
 <h1><?= $header ?></h1>
 
 <p><?= $message ?></p>
@@ -60,10 +47,13 @@
 
         {% if app.session.get('scoreBot') == 21 %}
             <h2>Datorn vann!</h2>
+            <a href="game21">Spela igen</a>
         {% elseif app.session.get('scoreBot') > 21 and  app.session.get('scoreUsr') > 21 %}
             <h2>Ingen vann.</h2>
+            <a href="game21">Spela igen</a>
         {% else %}
             <h2>Du vann!</h2>
+            <a href="game21">Spela igen</a>
         {% endif %}
     {% endif %}
 

@@ -16,6 +16,10 @@ main {
     background-color: #FCE9F3;
 }
 
+.coininput {
+    width: 3em;
+}
+
 .welcome {
     /* text-align: center; */
     /* margin-left: 5em; */

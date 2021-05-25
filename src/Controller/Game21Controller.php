@@ -64,9 +64,6 @@ class Game21Controller extends AbstractController
         $res = [];
 
 
-        var_dump($session->get('coinbetUsr'));
-
-
         if ($request->get('btn') == 'stop') {
             $session->set('stopgame', 1);
         }
@@ -109,22 +106,21 @@ class Game21Controller extends AbstractController
         $dice = new \App\Dice\DiceGraphic();
         $res = [];
 
-
-        var_dump($session->get('coinbetUsr'));
-
-
         if ($request->get('btn') == 'stop') {
             $session->set('stopgame', 1);
         }
 
         if ($session->get('stopgame') == 0) {
-            $die = $dice->rollTwo();
-            $res[] = $die;
-            $session->set('scoreUsr', ($session->get('scoreUsr') + $die));
-            $session->set('dice1graph', $dice->graphic());
+            for ($i = 1; $i < 3; $i++) {
+                $die = $dice->roll();
+                $res[] = $die;
+                $session->set('scoreUsr', ($session->get('scoreUsr') + $die));
+                $session->set('dice' . $i . 'graph', $dice->graphic());
+            }
         }
+
         $session->set('listan', []);
-        $session->set('listan', [$session->get('dice1graph')]);
+        $session->set('listan', [$session->get('dice1graph'), $session->get('dice2graph')]);
 
         $session->set('dice1status', false);
 

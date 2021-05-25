@@ -7,6 +7,6 @@
 [![Build Status](https://scrutinizer-ci.com/g/gizmo10475/mvcProj/badges/build.png?b=master)](https://scrutinizer-ci.com/g/gizmo10475/mvcProj/build-status/master)
 
 
-A project for the course MVC using Symfony and Doctrine.  Course: https://dbwebb.se/kurser/mvc-v1
+A project for the course MVC using Symfony and Doctrine.  Course: https://dbwebb.se/kurser/mvc-v1  
 Made by Eddie.  
 github.com/gizmo10475

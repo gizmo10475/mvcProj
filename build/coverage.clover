@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1622125296">
-  <project timestamp="1622125296">
+<coverage generated="1622134973">
+  <project timestamp="1622134973">
     <file name="C:\cygwin64\home\Edvin\dbwebb-kurser\mvc\me\proj\src\Books\Books.php">
       <class name="App\Books\Books" namespace="global">
         <metrics complexity="9" methods="9" coveredmethods="8" conditionals="0" coveredconditionals="0" statements="13" coveredstatements="12" elements="22" coveredelements="20"/>

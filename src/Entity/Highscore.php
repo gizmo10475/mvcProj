@@ -22,6 +22,11 @@ class Highscore
      */
     private $score;
 
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
+    private $namn;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -35,5 +40,17 @@ class Highscore
     public function setScore($score)
     {
         $this->score = $score;
+    }
+
+    public function getNamn(): ?string
+    {
+        return $this->namn;
+    }
+
+    public function setNamn(?string $namn): self
+    {
+        $this->namn = $namn;
+
+        return $this;
     }
 }

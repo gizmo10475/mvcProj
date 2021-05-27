@@ -36,5 +36,4 @@ class DiceTest extends TestCase
         $exp = $dice->getLastRoll();
         $this->assertSame($exp, $res);
     }
-
 }

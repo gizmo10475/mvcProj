@@ -9,6 +9,7 @@ use Symfony\Component\HttpFoundation\Session\SessionInterface;
 use Symfony\Component\HttpFoundation\Request;
 use App\Dice\DiceGraphic;
 use App\Entity\Highscore;
+use App\Entity\Histogram;
 
 class Game21Controller extends AbstractController
 {
@@ -63,6 +64,10 @@ class Game21Controller extends AbstractController
         $dice = new \App\Dice\DiceGraphic();
         $res = [];
 
+        $entityManager = $this->getDoctrine()->getManager();
+        $histogram = new Histogram();
+
+
 
         if ($request->get('btn') == 'stop') {
             $session->set('stopgame', 1);
@@ -71,6 +76,10 @@ class Game21Controller extends AbstractController
         if ($session->get('stopgame') == 0) {
             $die = $dice->roll();
             $res[] = $die;
+            $histogram->setNumber($die);
+            $entityManager->persist($histogram);
+            $entityManager->flush();
+
             $session->set('scoreUsr', ($session->get('scoreUsr') + $die));
             $session->set('dice1graph', $dice->graphic());
         }

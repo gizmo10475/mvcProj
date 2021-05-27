@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %} Books {% endblock %}
+{% block title %} Highscore {% endblock %}
 
 {% block body %}
 
@@ -11,10 +11,12 @@
             <tr>
                 <td>Id</td>
                 <td>Poäng</td>
+                <td>Namn</td>
         {% for score in highscore %}
             <tr>
                 <td> {{score.id}} </td>
                 <td> {{score.score}} </td>
+                <td> {{score.namn}} </td>
         {% endfor %}
     </tbody>
 </table>

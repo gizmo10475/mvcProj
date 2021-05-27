@@ -62,6 +62,4 @@ class BooksTest extends TestCase
         $exp = $book->getImg();
         $this->assertSame("img", $exp);
     }
-
-
 }

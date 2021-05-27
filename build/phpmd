@@ -1,0 +1,41 @@
+C:\cygwin64\home\Edvin\dbwebb-kurser\mvc\me\proj\migrations\Version20210513232631.php:20	Avoid using short method names like Version20210513232631::up(). The configured minimum method name length is 3.
+C:\cygwin64\home\Edvin\dbwebb-kurser\mvc\me\proj\migrations\Version20210513232631.php:20	Avoid using short method names like Version20210513232631::up(). The configured minimum method name length is 3.
+C:\cygwin64\home\Edvin\dbwebb-kurser\mvc\me\proj\migrations\Version20210513232631.php:20	Avoid unused parameters such as '$schema'.
+C:\cygwin64\home\Edvin\dbwebb-kurser\mvc\me\proj\migrations\Version20210513232631.php:26	Avoid unused parameters such as '$schema'.
+C:\cygwin64\home\Edvin\dbwebb-kurser\mvc\me\proj\migrations\Version20210514003955.php:20	Avoid using short method names like Version20210514003955::up(). The configured minimum method name length is 3.
+C:\cygwin64\home\Edvin\dbwebb-kurser\mvc\me\proj\migrations\Version20210514003955.php:20	Avoid using short method names like Version20210514003955::up(). The configured minimum method name length is 3.
+C:\cygwin64\home\Edvin\dbwebb-kurser\mvc\me\proj\migrations\Version20210514003955.php:20	Avoid unused parameters such as '$schema'.
+C:\cygwin64\home\Edvin\dbwebb-kurser\mvc\me\proj\migrations\Version20210514003955.php:26	Avoid unused parameters such as '$schema'.
+C:\cygwin64\home\Edvin\dbwebb-kurser\mvc\me\proj\migrations\Version20210514004238.php:20	Avoid using short method names like Version20210514004238::up(). The configured minimum method name length is 3.
+C:\cygwin64\home\Edvin\dbwebb-kurser\mvc\me\proj\migrations\Version20210514004238.php:20	Avoid using short method names like Version20210514004238::up(). The configured minimum method name length is 3.
+C:\cygwin64\home\Edvin\dbwebb-kurser\mvc\me\proj\migrations\Version20210514004238.php:20	Avoid unused parameters such as '$schema'.
+C:\cygwin64\home\Edvin\dbwebb-kurser\mvc\me\proj\migrations\Version20210514004238.php:26	Avoid unused parameters such as '$schema'.
+C:\cygwin64\home\Edvin\dbwebb-kurser\mvc\me\proj\migrations\Version20210525174219.php:20	Avoid using short method names like Version20210525174219::up(). The configured minimum method name length is 3.
+C:\cygwin64\home\Edvin\dbwebb-kurser\mvc\me\proj\migrations\Version20210525174219.php:20	Avoid using short method names like Version20210525174219::up(). The configured minimum method name length is 3.
+C:\cygwin64\home\Edvin\dbwebb-kurser\mvc\me\proj\migrations\Version20210525174219.php:20	Avoid unused parameters such as '$schema'.
+C:\cygwin64\home\Edvin\dbwebb-kurser\mvc\me\proj\migrations\Version20210525174219.php:26	Avoid unused parameters such as '$schema'.
+C:\cygwin64\home\Edvin\dbwebb-kurser\mvc\me\proj\migrations\Version20210525175043.php:20	Avoid using short method names like Version20210525175043::up(). The configured minimum method name length is 3.
+C:\cygwin64\home\Edvin\dbwebb-kurser\mvc\me\proj\migrations\Version20210525175043.php:20	Avoid using short method names like Version20210525175043::up(). The configured minimum method name length is 3.
+C:\cygwin64\home\Edvin\dbwebb-kurser\mvc\me\proj\migrations\Version20210525175043.php:20	Avoid unused parameters such as '$schema'.
+C:\cygwin64\home\Edvin\dbwebb-kurser\mvc\me\proj\migrations\Version20210525175043.php:26	Avoid unused parameters such as '$schema'.
+C:\cygwin64\home\Edvin\dbwebb-kurser\mvc\me\proj\migrations\Version20210525214408.php:20	Avoid using short method names like Version20210525214408::up(). The configured minimum method name length is 3.
+C:\cygwin64\home\Edvin\dbwebb-kurser\mvc\me\proj\migrations\Version20210525214408.php:20	Avoid using short method names like Version20210525214408::up(). The configured minimum method name length is 3.
+C:\cygwin64\home\Edvin\dbwebb-kurser\mvc\me\proj\migrations\Version20210525214408.php:20	Avoid unused parameters such as '$schema'.
+C:\cygwin64\home\Edvin\dbwebb-kurser\mvc\me\proj\migrations\Version20210525214408.php:26	Avoid unused parameters such as '$schema'.
+C:\cygwin64\home\Edvin\dbwebb-kurser\mvc\me\proj\src\Books\Books.php:12	Avoid variables with short names like $id. Configured minimum length is 3.
+C:\cygwin64\home\Edvin\dbwebb-kurser\mvc\me\proj\src\Controller\Game21Controller.php:64	Missing class import via use statement (line '64', column '21').
+C:\cygwin64\home\Edvin\dbwebb-kurser\mvc\me\proj\src\Controller\Game21Controller.php:115	Missing class import via use statement (line '115', column '21').
+C:\cygwin64\home\Edvin\dbwebb-kurser\mvc\me\proj\src\Controller\Game21Controller.php:158	Avoid unused parameters such as '$request'.
+C:\cygwin64\home\Edvin\dbwebb-kurser\mvc\me\proj\src\Controller\YatzyController.php:53	The method startgame() has a Cyclomatic Complexity of 42. The configured cyclomatic complexity threshold is 10.
+C:\cygwin64\home\Edvin\dbwebb-kurser\mvc\me\proj\src\Controller\YatzyController.php:53	The method startgame() has an NPath complexity of 77824. The configured NPath complexity threshold is 200.
+C:\cygwin64\home\Edvin\dbwebb-kurser\mvc\me\proj\src\Controller\YatzyController.php:53	The method startgame() has 154 lines of code. Current threshold is set to 100. Avoid really long methods.
+C:\cygwin64\home\Edvin\dbwebb-kurser\mvc\me\proj\src\Controller\YatzyController.php:117	Avoid unused local variables such as '$localcounter'.
+C:\cygwin64\home\Edvin\dbwebb-kurser\mvc\me\proj\src\Controller\YatzyController.php:118	Avoid unused local variables such as '$localscore'.
+C:\cygwin64\home\Edvin\dbwebb-kurser\mvc\me\proj\src\Controller\YatzyController.php:202	Avoid unused local variables such as '$throws'.
+C:\cygwin64\home\Edvin\dbwebb-kurser\mvc\me\proj\src\Entity\Books.php:18	Avoid variables with short names like $id. Configured minimum length is 3.
+C:\cygwin64\home\Edvin\dbwebb-kurser\mvc\me\proj\src\Entity\Course.php:18	Avoid variables with short names like $id. Configured minimum length is 3.
+C:\cygwin64\home\Edvin\dbwebb-kurser\mvc\me\proj\src\Entity\Course.php:18	Avoid unused private fields such as '$id'.
+C:\cygwin64\home\Edvin\dbwebb-kurser\mvc\me\proj\src\Entity\Highscore.php:18	Avoid variables with short names like $id. Configured minimum length is 3.
+C:\cygwin64\home\Edvin\dbwebb-kurser\mvc\me\proj\src\Entity\Histogram.php:18	Avoid variables with short names like $id. Configured minimum length is 3.
+C:\cygwin64\home\Edvin\dbwebb-kurser\mvc\me\proj\src\Kernel.php:14	Avoid assigning values to variables in if clauses and the like (line '22', column '27').
+C:\cygwin64\home\Edvin\dbwebb-kurser\mvc\me\proj\src\Kernel.php:27	Avoid assigning values to variables in if clauses and the like (line '34', column '27').

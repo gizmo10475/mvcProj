@@ -9,6 +9,7 @@ use Symfony\Component\HttpFoundation\Session\SessionInterface;
 use Symfony\Component\HttpFoundation\Request;
 use App\Dice\DiceGraphic;
 use App\Entity\Highscore;
+use App\Entity\Histogram;
 
 class YatzyController extends AbstractController
 {
@@ -16,7 +17,7 @@ class YatzyController extends AbstractController
     /**
      * @Route("/yatzy", name="yatzy")
      */
-    public function start(SessionInterface $session): Response
+    public function start(SessionInterface $session, Request $request): Response
     {
         $session->set('dice1status', true);
         $session->set('dice2status', true);
@@ -35,6 +36,12 @@ class YatzyController extends AbstractController
         $session->set('totalSum', 0);
         $session->set('listan', []);
         $session->set('counter', 0);
+        $session->set('namn', "guest");
+
+
+        if ($request->get('namn')) {
+            $session->set('namn', $request->get('namn'));
+        }
 
         return $this->render('yatzy.html.twig');
     }
@@ -47,6 +54,15 @@ class YatzyController extends AbstractController
     {
         $dice = new DiceGraphic();
         $res = [];
+
+
+        // $entityManager = $this->getDoctrine()->getManager();
+        // $histogram = new Histogram();
+        // $histogram->setNumber(1);
+        // $entityManager->persist($histogram);
+        // $entityManager->flush();
+
+
 
 
         if ($request->get('tärning1')) {
@@ -169,8 +185,10 @@ class YatzyController extends AbstractController
             if ((int)$session->get('totalSum') >= 50) {
                 $entityManager = $this->getDoctrine()->getManager();
 
+
                 $highscore = new Highscore();
                 $highscore->setScore($session->get('totalSum'));
+                $highscore->setNamn($session->get('namn'));
 
                 $entityManager->persist($highscore);
                 $entityManager->flush();

@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} Histogram {% endblock %}
+
+{% block body %}
+
+<h1 class="center">Histogram tärning</h1>
+
+<p>Detta är ett histogram som enbart följer Game21 när man kastar en tärning.</p>
+
+<p>
+{% for number in histogram %}
+    {{number.number}}
+{% endfor %}
+</p>
+
+
+{% endblock %}

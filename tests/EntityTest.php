@@ -97,7 +97,4 @@ class EntityTest extends TestCase
         $exp = $highscore->getId();
         $this->assertSame(null, $exp);
     }
-
-
-
 }

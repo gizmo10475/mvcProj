@@ -1,11 +1,17 @@
 PHPUnit 9.5.4 by Sebastian Bergmann and contributors.
 
-.............                                                     13 / 13 (100%)
+....W.........                                                    14 / 14 (100%)
 
-Time: 00:00.448, Memory: 16.00 MB
+Time: 00:00.453, Memory: 16.00 MB
 
-OK (13 tests, 13 assertions)
+There was 1 warning:
 
-Generating code coverage report in Clover XML format ... done [00:00.270]
+1) Warning
+No tests found in class "App\Controller\BaseControllerTest".
 
-Generating code coverage report in HTML format ... done [00:00.286]
+WARNINGS!
+Tests: 14, Assertions: 13, Warnings: 1.
+
+Generating code coverage report in Clover XML format ... done [00:00.327]
+
+Generating code coverage report in HTML format ... done [00:00.260]

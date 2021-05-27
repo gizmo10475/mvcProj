@@ -6,6 +6,13 @@
 
 <h1 class="center">Välkommen till mitt Yatzy spel!</h1>
 <img src="../img/dice.png" class="centerimg">
+
+<form method="POST">
+    <label for="lname">Skriv ditt namn här om du vill synas på highscore-listan! <br>
+    (Du syns endast på listan om du får över 50 poäng)</label><br>
+    <input type="text" id="namn" name="namn"><br><br>
+    <input type="submit" value="Lägg till namn">
+</form>
 <a href="yatzygame" class="link">Tryck här för att börja spela</a>
 
 {% endblock %}

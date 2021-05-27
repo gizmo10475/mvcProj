@@ -9,5 +9,21 @@
 
 A project for the course MVC using Symfony and Doctrine.  
 Course: https://dbwebb.se/kurser/mvc-v1  
+Database used in the project: SQLite  
+
+After downloading the project do  
+```
+composer install
+```
+```
+make install
+```  
+
+
+![image](img/php.png)
+
+
+
+
 Made by Eddie.  
 github.com/gizmo10475
